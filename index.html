@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+
+    <div class="top-bar">
+
+        <p>GubOS</p>
+
+        <p id="timeElement">03/03/2026 3:33 PM</p>
+
+    </div>
+
+    <div class="welcome-window">
+
+        <h1>Welcome to GubOS</h1>
+
+        <p>This is an OS all about bugs and gubs designed to inform you about how cool they are</p>
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+
+        function updateTime() {
+
+            var nowTime = new Date().toLocaleString();
+
+            var timeText = document.querySelector("#timeElement");
+
+            timeText.innerHTML = nowTime;
+        }
+
+        setInterval(updateTime, 1000);
+        
+
+    </script>
+
+
+  </body>
+
+</html>
