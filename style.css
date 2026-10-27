@@ -6,11 +6,11 @@
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
     background-color: rgba(85, 107, 47, 0.75);
     backdrop-filter: blur(10px);
     color:darkseagreen;
 }
+
 
 body{
     background-image: url(./bug.png);
@@ -32,4 +32,14 @@ body{
 .top-bar p{
     margin-left: 16px;
     margin-right: 16px;
+}
+
+
+#windowheader {
+    width: 25px;
+    height: 50px; 
+    position: absolute; 
+    top: -80px; 
+    right: -50px;
+    cursor: move;
 }

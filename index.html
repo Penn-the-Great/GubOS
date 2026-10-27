@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
   <body>
@@ -15,36 +16,26 @@
 
     </div>
 
-    <div class="welcome-window">
+    <div class="welcome-window" id="window">
 
-        <h1>Welcome to GubOS</h1>
+        <div id="windowheader">
+            
+            <img src="worm.png">
 
-        <p>This is an OS all about bugs and gubs designed to inform you about how cool they are</p>
+        </div>
+
+        <div style="padding: 20px">
+            <h1>Welcome to GubOS</h1>
+
+            <p>This is an OS all about bugs and gubs designed to inform you about how cool they are</p>
+        </div>
+
+        
 
     </div>
 
 
-
-
-
-
-
-    <script>
-
-
-        function updateTime() {
-
-            var nowTime = new Date().toLocaleString();
-
-            var timeText = document.querySelector("#timeElement");
-
-            timeText.innerHTML = nowTime;
-        }
-
-        setInterval(updateTime, 1000);
-        
-
-    </script>
+    <script src="script.js"></script>
 
 
   </body>
